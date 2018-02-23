@@ -7,7 +7,7 @@ def make_sandwich(type: "jam", number_of_sandwiches: 2)
 	array <<  "otherwise cry"
 	array <<  "pick up knife"
 	array <<  "by handle"
-	array <<  "Stick knife in #{type} jar"
+	array <<  "stick knife in #{type} jar"
 	array <<  "smear bread"
 	array <<  "eat bread"
 	return array
