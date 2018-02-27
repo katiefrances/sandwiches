@@ -1,8 +1,8 @@
-require_relative 'make-sandwich'
+require_relative 'sandwich'
 
 def test_for_vegemite_sandwich
 		subject "vegemite sandwich"
-		sandwich = make_sandwich type: 'vegemite', number_of_sandwiches: 1
+		sandwich = Sandwich.build type: 'vegemite', number_of_sandwiches: 1
 		number_of_steps = sandwich.length
 		expect number_of_steps, 9, "should be the length of the vegemite array"
 

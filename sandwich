@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
-require_relative 'make-sandwich.rb'
+require_relative 'sandwich.rb'
 
-puts make_sandwich type: 'beef', number_of_sandwiches: 1
+puts Sandwich.build type: 'beef', number_of_sandwiches: 1

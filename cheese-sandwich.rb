@@ -1,9 +1,8 @@
-require_relative 'make-sandwich'
-
+require_relative 'sandwich'
 
 def test_for_cheese_sandwich
 		subject "cheese sandwich"
-		sandwich = make_sandwich type: 'cheese', number_of_sandwiches: 2
+		sandwich = Sandwich.build type: 'cheese', number_of_sandwiches: 2
 		number_of_steps = sandwich.length
 		actual = number_of_steps
 		expected = 9
